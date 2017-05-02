@@ -17,6 +17,10 @@
 		<script src="js/init.js"></script>
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
 	</head>
 
 	<style type="text/css">
@@ -33,15 +37,22 @@
 			height: 100vh;
 		}
 
+		
+
+		@media only screen and (max-width: 800px) {
+			#logo{
+			    width: 300px;
+			}
+		}
 
 	</style>
 
-	<body class="landing">
+	<body class="landing">	
 
 		<!-- Banner -->
 			<section id="banner">
 				<div class="inner">
-					<img src="images/logo-wefit.png">
+					<img  id="logo" src="images/logo-wefit.png">
 					<p>You are looking for cool, young and hipster fashion?</p> 
 					Then we have the right clothes for you! <br>
 					Check out our different collections, <br>
